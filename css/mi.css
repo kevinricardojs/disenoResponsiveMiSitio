@@ -1,12 +1,21 @@
+.todo{
+	margin:0px 20px 0px 20px;
+
+}
+body{
+	background-image: url('../index.svg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
 nav{
 	width: 100%;
-	
 }
 ul{
 	display: flex;
 	padding: 0;
 	margin: 0;
 }
+
 li{
 	flex:auto;
 	background: rgba(0,0,0,0.5);
@@ -16,8 +25,9 @@ li{
 	border-bottom:4px solid  rgba(0,0,0,0);
 }
 li:hover{
-	border-bottom:4px solid #36948D;
+	border-bottom:2px solid #36948D;
 	border-bottom-style: inset;
+	background: rgba(0,0,0,0.6);
 }
 a{
 	color: rgba(255,255,255,0.8);
@@ -25,35 +35,49 @@ a{
 }
 
 
-body{
-	
-}
-.todo{
-	background: #5DB1AB;
-	width: 100%;
-}
-.contenido{
-	padding: 100px;
-	color:white;
-	max-height: 350px;
-}
 .sPrincipal{
 	margin-top: 20px; 
 	width: 92%;
 	margin-left: 4%;
 	background: #C7E5E3;
 	border-radius: 10px;
+	display: none;
 }
 .aPrincipal{
-	padding: 20px;
+	padding: 10px;
 }
 .instrumentos{
-	width: 50%;
-	display: none;
-	max-height: 100%;
-	margin:0px 1px;
+	background: #BCA;
+	width: 100%;
+	margin-top: 10px;
+	display: flex;
 }
-img{
-	max-width: 48%;
-	display: inline-block;
+svg{
+	flex:auto;
+	width: 23%;
+	height: 220px;
 }
+
+/*Pantalla mediana*/
+@media(max-width: 700px){
+	.instrumentos{
+		display: inline-block;
+
+	}
+	svg{
+		width: 45%;
+		left: 3.5%;
+		position: relative;
+		padding: 0 auto;
+	}
+
+}
+/*pantalla pequeña*/
+@media(max-width:400px ){
+		svg{
+		width: 80%;
+		left: 10%
+	
+	}
+}
+	
