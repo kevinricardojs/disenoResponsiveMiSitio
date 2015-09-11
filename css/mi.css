@@ -4,7 +4,7 @@
 }
 body{
 	background-image: url('../index.svg');
-	background-size: 100% auto;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 }
 nav{
@@ -69,6 +69,7 @@ svg{
 		left: 3.5%;
 		position: relative;
 		padding: 0 auto;
+		border: solid 1px;
 	}
 
 }
