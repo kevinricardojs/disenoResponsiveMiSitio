@@ -1,8 +1,39 @@
 /*pantalla pequeña*/
+@media(min-width: 400px){
+		ul{
+		display: flex;
+			}
+		li{
+			flex:auto;
+		}
+		.boton{
+			display: none;
+		}
+
+}
 @media(max-width:400px ){
+	.todo{
+		margin: 0 auto;
+	}
+	.instrumentos{
+		margin: 0 auto;
+
+	}
 	.index-img{
 		width: 80%;
-		left: 10%
-	
+		left: 10%	
 	}
+	.boton{
+		text-align: right;
+		padding-right: 5%;
+	}
+	li{
+		display: block;
+	}
+	ul{width: 100%;
+		position: absolute;
+		left: -100%;
+		z-index: 10;}
+		
+
 }
