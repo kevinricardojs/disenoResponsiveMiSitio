@@ -24,7 +24,7 @@
 		left: 10%	
 	}
 	.boton{
-		width: 100%;
+		width: 95%;
 		text-align: right;
 		padding-right: 5%;
 		position: fixed;
@@ -42,7 +42,7 @@
 		z-index: 10;}
 	.no-nav{
 			position: relative;
-			margin-top: 10.8%;
+			margin-top: 52px;
 		}
 
 }
