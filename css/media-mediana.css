@@ -2,7 +2,6 @@
 @media(max-width: 700px){
 	.content-circulos{
 		display: inline-block;
-
 	}
 	.index-img{
 		display: inline-block;
@@ -11,4 +10,5 @@
 		position: relative;
 		padding: 0 auto;
 	}
+
 }
