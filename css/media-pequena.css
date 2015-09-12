@@ -29,11 +29,15 @@
 	}
 	li{
 		display: block;
+		text-align: right;
+		padding-right: 5%;
 	}
 	ul{width: 100%;
 		position: absolute;
 		left: -100%;
 		z-index: 10;}
-		
+	.no-nav{
+			position: relative;
+		}
 
 }
