@@ -1,0 +1,8 @@
+/*pantalla pequeña*/
+@media(max-width:400px ){
+	.index-img{
+		width: 80%;
+		left: 10%
+	
+	}
+}
