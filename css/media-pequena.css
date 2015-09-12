@@ -1,5 +1,5 @@
 /*pantalla pequeña*/
-@media(min-width: 400px){
+@media(min-width: 481px){
 		ul{
 		display: flex;
 			}
@@ -11,7 +11,7 @@
 		}
 
 }
-@media(max-width:400px ){
+@media(max-width:480px ){
 	.todo{
 		margin: 0 auto;
 	}
@@ -24,8 +24,12 @@
 		left: 10%	
 	}
 	.boton{
+		width: 100%;
 		text-align: right;
 		padding-right: 5%;
+		position: fixed;
+		top: 0px;
+		z-index: 11;
 	}
 	li{
 		display: block;
@@ -33,11 +37,12 @@
 		padding-right: 5%;
 	}
 	ul{width: 100%;
-		position: absolute;
+		position: fixed;
 		left: -100%;
 		z-index: 10;}
 	.no-nav{
 			position: relative;
+			margin-top: 10.8%;
 		}
 
 }
