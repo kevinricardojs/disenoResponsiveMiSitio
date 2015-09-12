@@ -4,7 +4,7 @@
 }
 body{
 	background-image: url('../index.svg');
-	background-size: 100% 100%;
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
 nav{
@@ -23,6 +23,8 @@ li{
 	text-align: center;
 	line-height: 3;
 	border-bottom:4px solid  rgba(0,0,0,0);
+	 transition-duration: 0.5s;
+	 transition-timing-function: linear;
 }
 li:hover{
 	border-bottom:2px solid #36948D;
@@ -47,35 +49,56 @@ a{
 	padding: 10px;
 }
 .instrumentos{
-	background: #BCA;
+	background: rgba(0,0,0,0.5);
 	width: 100%;
 	margin-top: 10px;
-	display: flex;
+	padding: 2% 0% 2% 0%;
+	
 }
-svg{
+.content-circulos{
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+}
+.index-img{
 	flex:auto;
-	width: 23%;
-	height: 220px;
+	height: 200px;
+	background: rgba(255,255,2554,0.1);
+	border-radius: 100%;
+	margin: 1%;
+	 transition-duration: 0.2s;
+    transition-timing-function: linear;
+    
+}
+.index-img:hover{
+	background: rgba(255,255,2554,0.3);
+}
+.index-img img{
+	width: 75%;
+	height: 150px;
+	margin-top: 20px;
+	margin-left: 20px;
+	
 }
 
 /*Pantalla mediana*/
 @media(max-width: 700px){
-	.instrumentos{
+	.content-circulos{
 		display: inline-block;
 
 	}
-	svg{
+	.index-img{
+		display: inline-block;
 		width: 45%;
 		left: 3.5%;
 		position: relative;
 		padding: 0 auto;
-		border: solid 1px;
 	}
 
 }
 /*pantalla pequeña*/
 @media(max-width:400px ){
-		svg{
+	.index-img{
 		width: 80%;
 		left: 10%
 	
